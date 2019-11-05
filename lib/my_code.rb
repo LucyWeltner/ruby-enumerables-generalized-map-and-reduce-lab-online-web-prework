@@ -10,9 +10,9 @@ def map(array)
   new_array
 end 
 
-def reduce(array, startingpoint = "bananas")
+def reduce(array, startingpoint = 0)
   i = 0 
-  if startingpoint.class == Integer
+  if startingpoint
     while i < array.length do
       startingpoint = yield(startingpoint, array[i])
       i += 1 
