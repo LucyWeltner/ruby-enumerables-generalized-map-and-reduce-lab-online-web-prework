@@ -10,7 +10,7 @@ def map(array)
   new_array
 end 
 
-def reduce(array, startingpoint = 0)
+def reduce(array, startingpoint = nil)
   i = 0 
   if startingpoint.class == Integer
     while i < array.length do
