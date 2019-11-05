@@ -20,7 +20,7 @@ def reduce(array, startingpoint = 0)
   else 
     startingpoint = nil
     while i < array.length do
-      startingpoint = yield(startingpoint, array[i])
+      startingpoint = yield(!!startingpoint, !!array[i])
       i += 1
     end
   end 
