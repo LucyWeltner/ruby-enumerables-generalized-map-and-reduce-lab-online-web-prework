@@ -1,4 +1,5 @@
 # Your Code Here
+require "pry"
 def map(array)
   i = 0 
   new_array = []
@@ -13,6 +14,7 @@ def reduce(array, startingpoint = 0)
   i = 0 
   while i < array.length do
     startingpoint = yield(startingpoint, array[i])
+    binding.pry
     i += 1 
   end 
   startingpoint 
