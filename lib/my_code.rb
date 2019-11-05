@@ -23,6 +23,5 @@ def reduce(array, startingpoint = nil)
       i += 1
     end
   end 
-  binding.pry
   startingpoint 
 end
