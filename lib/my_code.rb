@@ -14,8 +14,8 @@ def reduce(array, startingpoint = 0)
   i = 0 
   while i < array.length do
     startingpoint = yield(startingpoint, array[i])
-    binding.pry
     i += 1 
   end 
+  binding.pry
   startingpoint 
 end
